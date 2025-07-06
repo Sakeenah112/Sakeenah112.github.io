@@ -3,242 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DaaruTtahseen Institution</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .hero-gradient {
-            background: linear-gradient(135deg, #f8fafc 0%, #eeeab2ef 100%);
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .mobile-menu {
-            display: none;
-        }
-        .mobile-menu.active {
-            display: block;
-        }
-    </style>
+    <title>DaarutTahseen Institution</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="font-sans anatialised">
-
-    <nav class="bg-white" shadow-sm py-4">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <div class="flex items-center space-x-2">
-                <img src="hack.jpg" alt="DaarutTahseen Logo" class="h-10 w-10"> <span class="text-gray-800 text-lg font-semibold">DaarutTahseen</span>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="Group 45.jpg" alt="DaarutTahseen Logo">
             </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">Home</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">About Us</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">Courses</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">Admission</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">Resources</a>
-                <a href="#" class="text-gray-600 hover:text-gray-900 transition duration-300">Contact</a>
-            </div>
-            <button class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300 hidden md:block">
-                Login/Register
-            </button>
-        <div class="bg- text-white p-4">Test</div>
-            <div class="md:hidden">
-                <button class="text-gray-600 focus:outline-none" class="-.09zM12">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <header class="bg-gray-300 py-16">
-        <div class="bg-[#eeeab2ef]"></div>
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
-            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold leading-tight text-amber-950 mb-4">
-                   <span class="text-green-600"> DaarutTahseen Institution</span> <br> brings Authentic <span class="text-green-600"></span> <span class="text-green-600">Islamic <br> Education </span><span>to Every Home,</span> <br> Digitally
-                </h1>
-                <p class="text-lg text-gray-700 mb-8">
-                    DaarutTahseen Institution is a trusted online madrasah <br>where students across Nigeria and beyond receive <br>structured Islamic education, anywhere, anytime.
-                </p>
-                <button class="bg-green-600 text-white px-8 py-3 rounded-lg text-lg hover:bg-green-700 transition duration-300">
-                    Get Started
-                </button>
-            </div>
-
-            <div class="md:w-1/2 grid grid-cols-2 gap-4 rounded-t-xl">
-                <img src="images (9).jpeg" alt="Student 1" class=" rounded-t-xl"> 
-                <img src="images (10).jpeg" alt="Student 3" class="rounded-lg shadow-md">
-            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Admission</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="login-register-btn">Login/Register</button>
         </div>
     </header>
 
-    <section class="bg-white py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-amber-800 mb-12">Trusted by Thousands of Learners</h2>
+    <section class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>DaarutTahseen Institution <span>brings Authentic </span> Islamic Education <span>to Every Home, Digitally</span></h1>
+                <p>DaarutTahseen Institution is a trusted online madrassah focused on providing high-quality, comprehensive, and structured Islamic education, anywhere, anytime.</p>
+                <button class="get-started-btn">Get Started</button>
+            </div>
+            <div class="layout-container">
+             <div class="box box1">
+               <img src="Rectangle 1.jpg" alt="Boy learning online">
+            </div>
+            <div class="box box2 pattern brown">
+               <img src="Rectangle 5.jpg" alt="">
+            </div>
+            <div class="box box3">
+               <img src="Rectangle 2.jpg" alt="Boys learning Quran">
+            </div>
+             <div class="box box4 pattern teal">
+                <img src="Rectangle 5 (1).jpg" alt="">
+             </div>
+            </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="flex flex-col items-center p-6 bg-white-50 rounded-lg shadow-lg">
-                    <div class="text-green-600 mb-4">
-                        <img src="images(4).png" class="w-12 h-12" alt="">
-                    </div>
-                    <span class="text-3xl font-bold text-gray-900">50+</span>
-                    <p class="text-gray-600">Verified Courses</p>
+        </div>
+    </section>
+
+    <section class="statistics-section">
+        <div class="container">
+            <h2>Trusted by Thousands of Learners</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <img src="Verified courses.jpg" alt="">
+                    <h3>50+</h3>
+                    <p>Verified Courses</p>
                 </div>
-
-                <div class="flex flex-col items-center p-6 bg-white-50 rounded-lg shadow-lg">
-                    <div class="text-green-600 mb-4">
-                        <img src="images (17).jpeg" class="w-12 h-12" alt="">
-                    </div>
-                    <span class="text-3xl font-bold text-gray-900">80+</span>
-                    <p class="text-gray-600">Qualified Tutors</p>
+                <div class="stat-item">
+                    <img src="tutor.jpg" alt="">
+                    <h3>80+</h3>
+                    <p>Qualified Tutors</p>
                 </div>
-
-                <div class="flex flex-col items-center p-6 bg-white-50 rounded-lg shadow-lg">
-                    <div class="text-green-600 mb-4">
-                        <img src="images (16).jpeg" class="w-12 h-12" alt="">
-                    </div>
-                    <span class="text-3xl font-bold text-gray-900">1200+</span>
-                    <p class="text-gray-600">Active Students</p>
+                <div class="stat-item">
+                    <img src="student.jpg" alt="">
+                    <h3>1200+</h3>
+                    <p>Active Students</p>
                 </div>
-
-                <div class="flex flex-col items-center p-6 bg-white-200 rounded-lg shadow-lg">
-                    <div class="text-green-600 mb-4">
-                        <img src="images (1).png" class="w-12 h-12" alt="">
-                    </div>
-                    <span class="text-3xl font-bold text-gray-900">Based on</span>
-                    <p class="text-gray-600">Authentic Qur'an & Sunnah</p>
+                <div class="stat-item">
+                    <img src="authentic.jpg" alt="">
+                    <p>Based on <br>Authentic Qur'an <br> & Sunnah</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-gray-300 py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-amber-800 mb-4">Featured Courses</h2>
-            <p class="text-gray-600 mb-12">Discover our most impactful Islamic courses carefully selected to help you build a strong foundation in Qur'an, Arabic and essential Deen.</p>
+    <section class="featured-courses-section">
+        <div class="container">
+            <h2>Featured Courses</h2>
+            <p class="section-description">Discover our most impactful Islamic courses carefully selected to help you build a strong foundation in Qur'an, Arabic and essential deen.</p>
+            <div class="course-grid">
+                <div class="course-card">
+                    <img src="quran recitation indonesia-bertauhid-ocEpT2tKX5c-unsplash 1.jpg" alt="Tajwid Mastery & Qur'an Recitation">
+                    <h3>Tajwid Mastery & Qur'an Recitation</h3>
+                    <p>Learn proper Qur'an pronunciation rules (tajwid) and improve your recitation skills.</p>
+                    <button class="learn-more-btn">Learn more</button>
+                </div>
+                <div class="course-card">
+                    <img src="Arabic Alphabet & Phonetics.jpg" alt="Arabic Language Program">
+                    <h3>Arabic Language Program <br> (Nahw & Sarf)</h3>
+                    <p>Building a strong foundation in Arabic language, from beginner to advanced levels.</p>
+                    <button class="learn-more-btn">Learn more</button>
+                </div>
+                <div class="course-card">
+                    <img src="aqeeda photo-1671461519096-4be7a2597766.jpg" alt="Islamic Aqeedah & Creed">
+                    <h3>Islamic Aqeedah & Creed Studies</h3>
+                    <p>Explore the core tenets, beliefs, and principles of Islamic faith.</p>
+                    <button class="learn-more-btn">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="images (6).jpeg" alt="Tajwid Mastery & Qur'an Recitation" class="w-full h-48 rounded-t-lg rounded-b-lg object-cover ">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 text-left mb-2">Tajwid Mastery & Qur'an Recitation</h3>
-                        <p class="text-gray-600 text-left text-sm mb-4">Master proper Qur'anic pronounciationwith certified teachers using classical Tajwid techniques.</p>
-                        <button class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300">
-                            Learn more
-                        </button>
+    <section class="testimonials-section" overflow="hidden">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <p class="section-description">Hear directly from our students and teachers about how DaarutTahseen has transformed their Islamic learning journey.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"The platform is organized, and uploading lesson materials is simple."</p>
+                    <div class="author-info">
+                        <img src="test1.jpg" alt="Ustadz Abdulmugadim">
+                        <div>
+                            <h3>Ustadz Abdulmuqadim</h3>
+                            <p>Teacher</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="images (7).jpeg" alt="Arabic Language Program (Nahw & Sarf)" class="w-full h-48 rounded-t-lg rounded-b-lg">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 text-left mb-2">Arabic Language Program (Nahw & Sarf)</h3>
-                        <p class="text-gray-600 text-left text-sm mb-4">Build a strong foundation in Arabic grammer and morphology for understanding classical texts.</p>
-                        <button class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300">
-                            Learn more
-                        </button>
+                <div class="testimonial-card">
+                    <p>"The curriculum is clear, well-structured, and I see students truly progressing very smoothly."</p>
+                    <div class="author-info">
+                        <img src="test3.jpg" alt="Ustadz Ja'far">
+                        <div>
+                            <h3>Ustadz Ja'far</h3>
+                            <p>Teacher</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="images (8).jpeg" alt="Islamic Aqeedah & Creed Studies" class="w-full h-48 rounded-t-lg rounded-b-lg">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold text-gray-900 text-left mb-2">Islamic Aqeedah & Creed Studies</h3>
-                        <p class="text-gray-600 text-left text-sm mb-4">Explore core Islamic beliefs, Names of Allah, and refutations of modern ideological deviations.</p>
-                        <button class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300">
-                            Learn more
-                        </button>
+                <div class="testimonial-card">
+                    <p>"The classes are flexible, interactive and spiritually uplifting. I have improved in my recitation tremendously."</p>
+                    <div class="author-info">
+                        <img src="Ellipse 5.jpg" alt="Jamiu">
+                        <div>
+                            <h3>Jamiu</h3>
+                            <p>Student/Beginner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" overflow="hidden">
+                    <p>"I love the way the teachers explain things. It's so clear and easy to understand."</p>
+                    <div class="author-info">
+                        <img src="test2.png" alt="Ahmed">
+                        <div>
+                            <h3>Ahmed</h3>
+                            <p>Student</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-white py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-amber-800 mb-4">Testimonials</h2>
-            <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Hear directly from our students and teachers about how DaarutTahseen has transformed their learning, faith and daily lives</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white-50 rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
-                    <p class="text-gray-700 text-left text-sm mb-4">The platform is organized and uploading lesson materials is so simple.</p>
-                    <img src="images (15).jpeg" alt="" class="w-20 h-20 rounded-full mb-4 flex-col object-cover">
-                    <p class="font-semibold text-gray-900">Ustadah Abdulnuqaddim</p> <span class="text-gray-300">Teacher</span>
-                </div>
-
-                <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
-                    <p class="text-gray-700 text-left text-sm mb-4">The curriculum is clear, well-organized, and i see students truly progressing every semester.</p>
-                    <img src="images (14).jpeg" alt="" class="w-20 h-20 rounded-full mb-4 object-cover">
-                    <p class="font-semibold text-gray-900">Ustadh Jafar</p> <span class="text-gray-300">Teacher</span>
-                </div>
-
-                <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
-                    <p class="text-gray-700 text-left text-sm mb-4">The classes are flexible, interactive and spitually uplifting. I have improved in tajwid, understanding and consistency.</p>
-                    <img src="images (13).jpeg"  class="w-20 h-20 rounded-full mb-4 object-cover">
-                    <p class="font-semibold text-gray-900">Jamiu</p> <span class="text-gray-300">Student</span>
-                </div>
-
-                <div class="bg-white rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
-                    <p class="text-gray-700 text-left text-sm mb-4">I learned from an international community of students.</p>
-                    <img src="images (12).jpeg"  class="w-20 h-20 rounded-full mb-4 object-bottom-left object-cover">
-                    <p class="font-semibold text-gray-900" alt="Student">Ahmad</p> <span class="text-gray-300">Student</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-black text-white py-12">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-                <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-green-400 transition duration-300">Home</a></li>
-                    <li><a href="#" class="hover:text-green-400 transition duration-300">About Us</a></li>
-                    <li><a href="#" class="hover:text-green-400 transition duration-300">Courses</a></li>
-                    <li><a href="#" class="hover:text-green-400 transition duration-300">Admissions</a></li>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Admissions</a></li>
                 </ul>
             </div>
-
-            <div>
-                <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
-                <p class="mb-2">Email: daaruttahseen@gmail.com</p>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <p>Email: daaruttahseen@gmail.com</p>
                 <p>Phone: +234567890234</p>
             </div>
-
-            <div>
-                <h4 class="text-lg font-semibold mb-4">Legal</h4>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-green-400 transition duration-300">Privacy Policy</a></li>
-                    <li><a href="#" class="hover:text-green-400 transition duration-300">Terms of Service</a></li>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
                 </ul>
             </div>
-
-            <div>
-                <h4 class="text-lg font-semibold mb-4">Social</h4>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-green-400 transition duration-300">
-                        <img src="images(5).png" class="w-6 h-6" alt="">
-                    </a>
-                    <a href="#" class="hover:text-green-400 transition duration-300">
-                        <img src="images (3).png" class="w-6 h-6" alt="">
-                    </a>
-                    <a href="#" class="hover:text-green-400 transition duration-300">
-                        <img src="images (11).jpeg" class="w-6 h-6" alt="">
-                    </a>
+            <div class="footer-column social-links">
+                <h4>Social</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
-
-        <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
-            &copy; DaarutTahseen Institution
+        <div class="footer-bottom">
+            <p>&copy; DaarutTahseen Institution</p>
         </div>
     </footer>
-    
 </body>
 </html>

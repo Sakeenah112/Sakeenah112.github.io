@@ -1,1 +1,644 @@
-@import "tailwindcss";
+/* General Styles */
+:root {
+    --primary-color: #007bff; /* A placeholder blue, adjust to exact color */
+    --secondary-color: #009688; /* A placeholder green, adjust to exact color */
+    --dark-blue: black; /* Example dark background color, adjust */
+    --light-gray: #fff9c4; /* Light background for sections */
+    --text-color: #333;
+    --white: #fff;
+    --dark-grey-text: #555;
+    --button-bg: #009688;
+    --button-hover-bg: #009688;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: white; /* A very light grey/off-white */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: black;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+ul {
+    list-style: none;
+    font-family: 'arial', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Header */
+.header {
+    background-color: var(--white);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Adjust as needed */
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    font-family: 'Segoe UI', sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+.login-register-btn {
+    background-color: var(--button-bg);
+    color: var(--white);
+}
+
+.login-register-btn:hover {
+    background-color: var(--button-hover-bg);
+    border-radius: 8px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #fff9c4; /* A light, calming background color */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    text-align: left;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 30px;
+}
+
+.hero-text h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.2rem; /* Larger font size */
+    font-weight: 700;
+    line-height: 1.2;
+    color: #009688;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+    color: #360400;
+}
+
+.hero-text p {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #242424;
+    margin-bottom: 30px;
+    line-gap-override: 0.2px;
+}
+
+.get-started-btn {
+    background-color: var(--button-bg);
+    color: var(--white);
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+.get-started-btn:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.layout-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  width: 500px;
+  background-color: #fff9c4;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.box {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.box1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 2;
+  overlay: auto;
+}
+
+.box2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  height: 60px;
+  border-bottom-left-radius: 6px;
+  width: 200px;
+}
+
+.box3 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  z-index: 1;
+  overlay: auto;
+}
+
+.box4 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  height: 60px;
+  border-top-right-radius: 6px;
+  width: 200px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pattern.brown {
+  background-image: url("brown_pattern.png");
+  background-size: cover;
+}
+
+.pattern.teal {
+  background-image: url("teal_pattern.png");
+  background-size: cover;
+}
+
+
+/* Statistics Section */
+.statistics-section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.statistics-section h2 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #360400;
+    margin-bottom: 3rem;
+    letter-spacing: -0.5px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.stat-item {
+    background: white;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 2.5rem 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.445);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.stat-item h3 {
+    
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    letter-spacing: -1px;
+}
+
+.stat-item p {
+    
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+/* Featured Courses Section */
+.featured-courses-section {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #fff9c4;
+    min-height: 30vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.featured-courses-section h2 {
+    
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #360400;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.8px;
+    line-height: 1.2;
+}
+
+.section-description {
+    
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    line-height: 1.6;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.course-card {
+    background-color: var(--white);
+    border-radius: 24px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+}
+
+.course-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover;
+    border-radius: 25px;
+    transition: transform 0.6s ease;
+    position: relative;
+}
+
+.course-card:hover .course-card img {
+    transform: scale(1.08);
+}
+.course-card h3 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px 20px 10px;
+    color: black;
+    text-align: left;
+}
+
+.course-card p {
+    font-size: 0.95rem;
+    color: var(--dark-grey-text);
+    padding: 0 20px 20px;
+    flex-grow: 1; /* Allows text to take available space */
+    text-align: left;
+}
+
+.course-card .learn-more-btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    width: calc(100% - 40px); /* Adjusting for padding */
+    margin: 0 20px 20px;
+    padding: 10px 15px;
+    align-self: center; /* Center the button if using flexbox */
+}
+
+.course-card .learn-more-btn:hover {
+    background-color: var(--button-hover-bg);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: white; /* Light background similar to hero */
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #360400;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.8px;
+    line-height: 1.2;
+}
+
+.section-description {
+    
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    line-height: 1.6;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 40px;
+   
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.445);
+    display: flex;
+    display: grid 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card .author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-card .author-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px;
+}
+
+.testimonial-card .author-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: black;
+    text-align: left;
+}
+
+.testimonial-card > p { /* Targeting the testimonial text */
+    color: black;
+    display: flex;
+    direction: flex;
+    text-align: left;
+}
+
+.testimonial-card .author-info p {
+    font-size: 1rem;
+    color: var(--dark-grey-text);
+    margin-bottom: 0;
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    background-color: black; /* Dark background for footer */
+    color: var(--white);
+    padding: 40px 20px 20px;
+}
+
+.footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h4 {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.footer-column ul li {
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #bbb; /* Lighter white for links */
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-column p {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Basic Responsiveness (adjust as needed) */
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .hero-images {
+        min-width: unset;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar ul li {
+        margin: 0 10px 10px;
+    }
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    .stats-grid, .course-grid, .testimonials-grid, .footer-content {
+        grid-template-columns: 1fr;
+    }
+    .stat-item, .course-card, .testimonial-card, .footer-column {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .course-card .learn-more-btn {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-images {
+        grid-template-columns: 1fr;
+    }
+    .hero-images img:nth-child(2) { /* Hide second image on very small screens */
+        display: none;
+    }
+    .navbar ul li {
+        margin: 0 5px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: left; !important;
+        padding: auto;
+        align-items: flex-start;
+    }
+
+    .footer-column h4 {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    .footer-column ul li {
+        text-align: left;
+    }
+
+    .footer-column p {
+        text-align: left;
+    }
+
+    .contact-info {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 15px 15px;
+    }
+
+    .footer-content {
+        gap: 25px;
+    }
+}
